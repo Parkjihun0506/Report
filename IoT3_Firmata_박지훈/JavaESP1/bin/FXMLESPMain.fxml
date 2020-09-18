@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLMain">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="787.0" text="KB IoT3 FIRMATA                                                                                                                                                                         PJH" />
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="52.0" prefHeight="363.0" prefWidth="787.0">
+         <children>
+            <GridPane alignment="CENTER" hgap="10.0" prefHeight="340.0" prefWidth="787.0" vgap="10.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="83.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="103.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="92.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="80.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="80.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="135.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="107.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ToggleButton fx:id="p2t1" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT1" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="p3t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT2" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p4t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT3" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p5t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT4" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p6t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT5" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p7t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT6" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p8t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT7" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p9t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT8" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p10t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT9" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p11t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT10" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p12t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT11" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p13t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="PUT12" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p2t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <ToggleButton fx:id="p3t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <ToggleButton fx:id="p4t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <ToggleButton fx:id="p5t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT4" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <ToggleButton fx:id="p6t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT5" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <ToggleButton fx:id="p7t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT6" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <ToggleButton fx:id="p8t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT7" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <ToggleButton fx:id="p9t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT8" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <ToggleButton fx:id="p10t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT9" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <ToggleButton fx:id="p11t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT10" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <ToggleButton fx:id="p12t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT11" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                  <ToggleButton fx:id="p13t0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ipHandler" toggleGroup="$PUT12" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                  <ToggleButton fx:id="p2b1xp2b0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW1" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p3b1xp3b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW2" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p4b1xp4b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW3" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p5b1xp5b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW4" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p6b1xp6b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW5" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p7b1xp7b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW6" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p8b1xp8b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW7" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p9b1xp9b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW8" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p10b1xp10b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW9" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p11b1xp11b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="10">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW10" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p12b1xp12b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="11">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW11" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="p13b1xp13b0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hglwHandler" GridPane.columnIndex="5" GridPane.rowIndex="12">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="LOW12" />
+                     </toggleGroup></ToggleButton>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="PinNo" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="OUTPUT" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="INPUT" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="PWM" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="79.0" GridPane.columnIndex="4" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="75.0" text="HIGH/LOW" GridPane.columnIndex="5" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="PWM" GridPane.columnIndex="6" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D02" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D03" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D04" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D05" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D06" GridPane.rowIndex="5" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D07" GridPane.rowIndex="6" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D08" GridPane.rowIndex="7" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D09" GridPane.rowIndex="8" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D10" GridPane.rowIndex="9" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D11" GridPane.rowIndex="10" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D12" GridPane.rowIndex="11" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="D13" GridPane.rowIndex="12" />
+                  <TextField fx:id="tf6" promptText="0~255" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <TextField fx:id="tf7" promptText="0~255" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <TextField fx:id="tf8" promptText="0~255" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <TextField fx:id="tf9" promptText="0~255" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                  <TextField fx:id="tf10" promptText="0~255" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                  <TextField fx:id="tf11" promptText="0~255" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+                  <Button fx:id="a3c" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#comHandler1" text="Commit" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <Button fx:id="a5c" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#comHandler2" text="Commit" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                  <Button fx:id="a6c" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#comHandler3" text="Commit" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                  <Button fx:id="a9c" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#comHandler4" text="Commit" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                  <Button fx:id="a10c" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#comHandler5" text="Commit" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                  <Button fx:id="a11c" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#comHandler6" text="Commit" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+                  <ToggleButton fx:id="p3t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" toggleGroup="$PUT2" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ToggleButton fx:id="p5t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" toggleGroup="$PUT4" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <ToggleButton fx:id="p6t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" toggleGroup="$PUT5" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <ToggleButton fx:id="p9t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" toggleGroup="$PUT8" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <ToggleButton fx:id="p10t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" toggleGroup="$PUT9" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                  <ToggleButton fx:id="p11t1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#opHandler" toggleGroup="$PUT10" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                  <TextField fx:id="tf12" promptText="ex)COM8" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+                  <TextField fx:id="tf13" promptText="ex)9600" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#connHandler" text="Connect" GridPane.columnIndex="7" GridPane.rowIndex="12" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </GridPane>
+         </children>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="428.0" prefHeight="95.0" prefWidth="787.0">
+         <children>
+            <GridPane hgap="10.0" prefHeight="54.0" prefWidth="787.0" vgap="10.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="A00" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="A01" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="A02" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="A03" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="A04" GridPane.columnIndex="4" />
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="A05" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <TextField fx:id="tf0" GridPane.columnIndex="1" />
+                  <TextField fx:id="tf1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tf2" GridPane.columnIndex="3" />
+                  <TextField fx:id="tf3" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="tf4" GridPane.columnIndex="5" />
+                  <TextField fx:id="tf5" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children></HBox>
+      <TextArea fx:id="ta1" layoutX="15.0" layoutY="530.0" prefHeight="95.0" prefWidth="787.0" promptText="Serial Msg">
+         <font>
+            <Font size="24.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>
