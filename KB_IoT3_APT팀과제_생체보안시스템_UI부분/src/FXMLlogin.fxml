@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HandlerTest2">
+   <children>
+      <AnchorPane fx:id="anchor2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0">
+         <children>
+            <TabPane layoutX="13.0" layoutY="27.0" prefHeight="646.0" prefWidth="998.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab fx:id="tab1" text="메인메뉴">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="ta1" editable="false" layoutX="658.0" layoutY="183.0" prefHeight="249.0" prefWidth="305.0" />
+                              <Button fx:id="btnLogout" layoutX="846.0" layoutY="61.0" mnemonicParsing="false" onAction="#btnLogout" prefHeight="27.0" prefWidth="65.0" text="로그아웃" />
+                              <Label fx:id="lbl6" layoutX="810.0" layoutY="22.0" />
+                              <Label layoutX="769.0" layoutY="150.0" prefHeight="26.0" prefWidth="83.0" text="시스템 메시지" />
+                              <Label layoutX="56.0" layoutY="143.0" text="출입시스템상태" />
+                              <Label fx:id="lbl3" layoutX="412.0" layoutY="22.0" />
+                              <Separator layoutX="1.0" layoutY="120.0" prefHeight="0.0" prefWidth="998.0" />
+                              <Separator layoutX="496.0" layoutY="120.0" orientation="VERTICAL" prefHeight="526.0" prefWidth="0.0" />
+                              <TableView fx:id="tableroom4" layoutX="56.0" layoutY="196.0" prefHeight="200.0" prefWidth="235.0">
+                                <columns>
+                                  <TableColumn fx:id="gateColumn2" prefWidth="75.0" text="게이트번호" />
+                                  <TableColumn fx:id="entColumn" prefWidth="75.0" text="입구" />
+                                    <TableColumn fx:id="exitColumn" prefWidth="75.0" text="출구" />
+                                </columns>
+                              </TableView>
+                              <Button fx:id="btnref" layoutX="251.0" layoutY="409.0" mnemonicParsing="false" onAction="#btnRefresh" text="조회" />
+                              <Label layoutX="56.0" layoutY="413.0" text="출입시스템 상태가 보이지 않으면" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab2" text="출입로그조회">
+                     <content>
+                        <AnchorPane fx:id="anchor1" minHeight="0.0" minWidth="0.0" prefHeight="423.0" prefWidth="998.0">
+                           <children>
+                              <TableView fx:id="tableroom" editable="true" layoutX="184.0" layoutY="252.0" prefHeight="283.0" prefWidth="692.0">
+                                 <columns>
+                                    <TableColumn fx:id="idColumn" editable="false" prefWidth="79.0" text="사번" />
+                                    <TableColumn fx:id="nameColumn" editable="false" prefWidth="79.0" text="사원명" />
+                                    <TableColumn fx:id="callColumn" editable="false" prefWidth="108.0" text="전화번호" />
+                                    <TableColumn fx:id="dateColumn" editable="false" prefWidth="195.0" text="일시" />
+                                    <TableColumn fx:id="acesColumn" editable="false" prefWidth="116.0" text="출/퇴 여부" />
+                                    <TableColumn fx:id="gateColumn" editable="false" prefWidth="114.0" text="출퇴 게이트" />
+                                 </columns>
+                              </TableView>
+                              <GridPane hgap="10.0" layoutX="153.0" layoutY="14.0" prefHeight="160.0" prefWidth="580.0" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="153.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="214.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="223.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="15.0" prefWidth="185.0" style="-fx-border-color: black; -fx-background-color: white;" text="검색조건1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: white;" text="검색조건2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: white;" text="검색조건3" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="190.0" style="-fx-border-color: black; -fx-background-color: white;" text="사번" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: white;" text="사원명" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-background-color: white;" text="날짜" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tf5" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="138.0" GridPane.columnIndex="2" />
+                                    <TextField fx:id="tf6" alignment="CENTER" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <DatePicker fx:id="dp1" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </GridPane>
+                              <Button fx:id="btnsrch1" layoutX="773.0" layoutY="59.0" mnemonicParsing="false" onAction="#btnSerch1" text="검색" />
+                              <DatePicker fx:id="dp2" editable="false" layoutX="778.0" layoutY="134.0" />
+                              <Label layoutX="729.0" layoutY="138.0" text="~" />
+                              <Button fx:id="btncan2" layoutX="849.0" layoutY="59.0" mnemonicParsing="false" onAction="#btnCancle2" text="취소" />
+                              <Label layoutX="643.0" layoutY="200.0" text="검색결과 : " />
+                              <Label fx:id="lbl2" layoutX="703.0" layoutY="200.0" prefHeight="15.0" prefWidth="28.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab3" text="편집로그조회">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <GridPane hgap="10.0" layoutX="132.0" layoutY="36.0" prefHeight="198.0" prefWidth="650.0" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="검색조건1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="검색조건2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="검색조건3" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="검색조건4" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="사번" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="사원명" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="날짜" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="편집내용" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tf9" GridPane.columnIndex="2" />
+                                    <TextField fx:id="tf10" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <DatePicker fx:id="dp3" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="cb1" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </GridPane>
+                              <TableView fx:id="tableroom2" editable="true" layoutX="230.0" layoutY="255.0" prefHeight="275.0" prefWidth="604.0">
+                                 <columns>
+                                    <TableColumn fx:id="idColumn2" editable="false" prefWidth="84.0" text="사번" />
+                                    <TableColumn fx:id="nameColumn2" editable="false" prefWidth="96.0" text="사원명" />
+                                    <TableColumn fx:id="editColumn" editable="false" minWidth="0.0" prefWidth="194.0" text="편집내용" />
+                                    <TableColumn fx:id="dateColumn2" editable="false" prefWidth="228.0" text="편집일시" />
+                                 </columns>
+                              </TableView>
+                              <Button layoutX="828.0" layoutY="76.0" mnemonicParsing="false" onAction="#btnSerch2" text="검색" />
+                              <DatePicker fx:id="dp4" editable="false" layoutX="808.0" layoutY="149.0" />
+                              <Button layoutX="889.0" layoutY="76.0" mnemonicParsing="false" onAction="#btnCancle3" text="취소" />
+                              <Label layoutX="778.0" layoutY="153.0" text="~" />
+                              <Label layoutX="659.0" layoutY="227.0" text="검색결과:" />
+                              <Label fx:id="lbl5" layoutX="722.0" layoutY="227.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab4" text="기준정보조회">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <GridPane hgap="10.0" layoutX="263.0" layoutY="69.0" prefHeight="113.0" prefWidth="473.0" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="검색조건1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="검색조건2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-border-color: black;" text="사번" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="144.0" style="-fx-background-color: white; -fx-border-color: black;" text="사원명" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tf7" GridPane.columnIndex="2" />
+                                    <TextField fx:id="tf8" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </GridPane>
+                              <Button fx:id="btnsrch3" layoutX="791.0" layoutY="114.0" mnemonicParsing="false" onAction="#btnSerch3" text="검색" />
+                              <TableView fx:id="tableroom3" editable="true" layoutX="54.0" layoutY="267.0" prefHeight="279.0" prefWidth="891.0">
+                                 <columns>
+                                    <TableColumn fx:id="chkColumn" prefWidth="75.0" />
+                                    <TableColumn fx:id="idColumn3" editable="false" prefWidth="77.0" text="사번" />
+                                    <TableColumn fx:id="nameColumn3" editable="false" prefWidth="88.0" text="사원명" />
+                                    <TableColumn fx:id="callColumn3" editable="false" prefWidth="129.0" text="전화번호" />
+                                    <TableColumn fx:id="depColumn" editable="false" prefWidth="85.0" text="소속부서" />
+                                    <TableColumn fx:id="faceColumn" editable="false" prefWidth="139.0" text="안면이미지" />
+                                    <TableColumn fx:id="fingerColumn" editable="false" minWidth="3.0" prefWidth="149.0" text="지문정보" />
+                                    <TableColumn fx:id="dateColumn3" editable="false" prefWidth="146.0" text="등록일자" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="btnnew" layoutX="236.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnnew" text="신규등록" />
+                              <Button fx:id="btnchnF" layoutX="373.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnchnF" text="안면이미지 수정" />
+                              <Button fx:id="btnchnH" layoutX="573.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnchnH" text="지문정보 수정" />
+                              <Button fx:id="btndel" layoutX="709.0" layoutY="194.0" mnemonicParsing="false" onAction="#btndel" text="삭제" />
+                              <Label layoutX="709.0" layoutY="240.0" text="검색결과:" />
+                              <Label fx:id="lbl4" layoutX="767.0" layoutY="240.0" />
+                              <Button layoutX="866.0" layoutY="114.0" mnemonicParsing="false" onAction="#btnCancle4" text="취소" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
